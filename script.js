@@ -6,9 +6,7 @@ const trafficLight = (event) => {
   turnOn[event.target.id]();
 }
 
-const nextIndex = () => { 
-   colorsindex = colorsindex < 2 ? ++colorsindex : 0;
-}
+const nextIndex = () => colorsindex = colorsindex < 2 ? ++colorsindex : 0;
 
 const changeColor = () => {
   const colors = [
